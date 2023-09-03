@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body{
+    background-color: #F5E8B0;
+}
+
+.wrapper{
+    width: 400px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.container{
+    width: 100%;
+    background-color: #FFF4E1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+    padding: 50px 40px;
+    position: relative;
+    border-radius:5px;
+    text-align: center;
+}
+
+.container::after{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    background-color: #ffffff;
+    z-index: -1;
+    top: -10%; 
+    left: 10%;
+
+}
+
+.container p {
+    color: black; 
+    line-height:2;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.container h3
+{
+    color: black;
+    margin: 20px 0 60px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 24px;
+
+}
+
+.container button {
+    background-color: #FFBB5C;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#quote-container {
+    display: flex; /* Use flexbox to create a horizontal layout */
+    flex-direction: column; /* Stack elements vertically within the container */
+    align-items: center; /* Center elements horizontally within the container */
+}
+
+
+.container button:hover {
+    background-color: #FFA346;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
